@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_5</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+      <h1>Sélectionné deux nombres décimal</h1>
+
+        <form onsubmit="return calcul()">
+            <label for="premier_nombre">Premier nombre : </label><input type="text" id="premier_nombre" name="premier_nombre"/><br/>
+            <label for="deuxieme_nombre">Deuxième nombre : </label><input type="text" id="deuxieme_nombre" name="deuxieme_nombre"/><br/>
+            <button  id="valider" name ="valider">Valider</button>
+              <script type="text/javascript">
+                function calcul() {
+                  var firstnumber = parseFloat(document.getElementById("premier_nombre").value);
+                  var secondnumber = parseFloat (document.getElementById("deuxieme_nombre").value);
+                  var result = Math.trunc(firstnumber) * secondnumber;
+                    alert(result);
+            }
+            </script>
+        </form>
+    </body>
+</html>
